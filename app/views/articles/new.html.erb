@@ -1,0 +1,17 @@
+<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+    <p>
+        <%= form.label :title %><br />
+        <%= form.text_field :title %>
+    </p>
+
+    <p>
+    
+    </p>
+        <%= form.label :text %>
+        <%= form.text_area :text %>
+    <p>
+        <%= form.submit %>
+    </p>
+<% end %>
+
+<%= link_to 'Back', articles_path %>
